@@ -10,14 +10,6 @@ type FormStatus = "idle" | "submitting" | "success";
 export function ContactSection() {
   const [status, setStatus] = useState<FormStatus>("idle");
 
-  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setStatus("submitting");
-    await new Promise((resolve) => setTimeout(resolve, 500));
-    setStatus("success");
-    event.currentTarget.reset();
-  }
-
   return (
     <section
       id="contact"
@@ -69,72 +61,7 @@ export function ContactSection() {
           </div>
         </Reveal>
 
-        {/* Form */}
-        <Reveal delay={130}>
-          <form onSubmit={handleSubmit} className="space-y-0">
-
-            {/* Name */}
-            <div className="border-b border-neutral-200 py-4 dark:border-neutral-800">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                placeholder="Your Name"
-                className="w-full bg-transparent text-sm text-gray-800 placeholder-neutral-400 outline-none dark:text-gray-100"
-              />
-            </div>
-
-            {/* Email */}
-            <div className="border-b border-neutral-200 py-4 dark:border-neutral-800">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                placeholder="Email Address"
-                className="w-full bg-transparent text-sm text-gray-800 placeholder-neutral-400 outline-none dark:text-gray-100"
-              />
-            </div>
-
-            {/* Message */}
-            <div className="border-b border-neutral-200 py-4 dark:border-neutral-800">
-              <textarea
-                id="message"
-                name="message"
-                rows={3}
-                required
-                placeholder="Your Message"
-                className="w-full resize-none bg-transparent text-sm text-gray-800 placeholder-neutral-400 outline-none dark:text-gray-100"
-              />
-            </div>
-
-            {/* Submit row */}
-            <div className="flex items-center justify-between pt-6">
-              {status === "success" ? (
-                <p role="status" className="text-xs font-medium tracking-widest text-emerald-600 uppercase dark:text-emerald-400">
-                  ✓ Sent — I&apos;ll reply soon
-                </p>
-              ) : (
-                <span className="text-xs tracking-widest text-neutral-400 uppercase">Open to work</span>
-              )}
-
-              <button
-                type="submit"
-                disabled={status === "submitting"}
-                className="group relative inline-flex items-center gap-2 overflow-hidden rounded-none border border-gray-900 px-7 py-2.5 text-xs font-semibold uppercase tracking-widest text-gray-900 transition-all duration-300 disabled:opacity-50 dark:border-gray-100 dark:text-gray-100"
-              >
-                <span className="absolute inset-0 origin-bottom scale-y-0 bg-red-700 transition-transform duration-500 ease-in-out group-hover:scale-y-100" />
-                <span className="relative z-10 flex items-center gap-2 transition-colors duration-500 group-hover:text-white">
-                  {status === "submitting" ? "Sending" : "Send"}
-                  <FaPaperPlane className="text-[10px]" />
-                </span>
-              </button>
-            </div>
-
-          </form>
-        </Reveal>
-
+        
       </div>
     </section>
   );
