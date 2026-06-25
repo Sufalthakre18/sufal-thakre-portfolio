@@ -1,8 +1,21 @@
 
+
+import { HeroSection } from "@/components/sections/hero-section";
+import { AboutSection } from "@/components/sections/about-section";
+import { SkillsSection } from "@/components/sections/skills-section";
+import { ContactSection } from "@/components/sections/contact-section";
+
 export default function Home() {
   return (
-    <h1 className="text-3xl font-extrabold tracking-wider bg-amber-900">
-      hello world 
-    </h1>
+    <>
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <SkillsSection />
+        
+        
+        <ContactSection />
+      </main>
+    </>
   );
 }

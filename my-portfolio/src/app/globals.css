@@ -1,2 +1,45 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
+/* Keep your existing body/html setup */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-poppins), sans-serif;
+}
+
+/* ========================================= */
+/* EXACT CLONE ANIMATIONS FROM YOUR VANILLA CSS */
+/* ========================================= */
+
+@keyframes slideInLeftExact {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-left-exact {
+  animation: slideInLeftExact 0.6s ease-out forwards;
+  opacity: 0; /* Starts hidden before animation kicks in */
+}
+
+@keyframes firstLetterBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.heading-alphabet {
+  display: inline-block;
+  animation: firstLetterBounce 2s infinite;
+}
