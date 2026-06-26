@@ -17,7 +17,7 @@ export const projects: Project[] = [
     title: "YouTube Clone — MERN Stack Capstone Project",
     description:
       "A full-stack YouTube clone built with the MERN Stack (MongoDB, Express.js, React, Node.js). Users can browse videos, authenticate with JWT, like/dislike videos, comment, create channels, and manage their own video content.",
-    image: "/images/projects/youtube-clone.png",
+    image: "/images/projects/youtube-clone.webp",
     liveUrl: "https://mern-youtube-clone-three.vercel.app/",
     githubUrl: "https://github.com/Sufalthakre18/mern-youtube-clone",
     tags: ["MERN", "React", "Axios", "JWT"],
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     title: "Real-Time Chat Application",
     description:
       "A full-stack real-time messaging platform built with Next.js, TypeScript, Convex, and Clerk. Features secure authentication, one-to-one and group chats, live messaging, online presence tracking, typing indicators, unread message notifications, emoji reactions, message deletion, and a fully responsive user interface.",
-    image: "/images/projects/realtime-chat.png",
+    image: "/images/projects/realtime-chat.webp",
     liveUrl: "https://realtime-chat-orcin.vercel.app/",
     githubUrl: "https://github.com/Sufalthakre18/realtime-chat-nextjs-convex",
     tags: ["Next.js", "Radix UI", "Convex", "Clerk", "TypeScript"],
@@ -72,7 +72,7 @@ export const projects: Project[] = [
     title: "FWeather Forecast Application",
     description:
       "A weather app using the Open-Meteo API with search, geolocation, a 5-day forecast, and recent-search history.",
-    image: "/images/projects/weather-forecast.gif",
+    image: "/images/projects/weather-forecast.webp",
     liveUrl: "https://weather-forecast-application-lyart.vercel.app/",
     githubUrl: "https://github.com/Sufalthakre18/weather-forecast-application",
     tags: ["JavaScript", "Open-Meteo API", "Tailwind CSS"],
@@ -116,7 +116,7 @@ export const projects: Project[] = [
     title: "CineAI — AI Movie Insight",
     description:
       "A full-stack Next.js application that takes an IMDb movie ID and returns complete movie details with AI-powered audience sentiment analysis, powered by Groq's LLaMA 3.3 70B model.",
-    image: "/images/projects/cinema.png",
+    image: "/images/projects/cinema.webp",
     liveUrl: "https://cinescope-ai-virid.vercel.app/",
     githubUrl: "https://github.com/Sufalthakre18/cinescope-ai",
     tags: ["Next.js", "Groq SDK", "Lucide React","OMDb API"],
@@ -127,7 +127,7 @@ export const projects: Project[] = [
     title: "Personal Portfolio Website",
     description:
       "This is a responsive single-page portfolio website built with semantic HTML, CSS (Tailwind CSS), and basic JavaScript. It showcases my skills, certifications, projects, and contact information with animations, a day/night mode toggle, and interactive elements. ",
-    image: "/images/projects/portfolio.png",
+    image: "/images/projects/portfolio.webp",
     liveUrl: "https://my-portfolio-pearl-xi-96.vercel.app/",
     githubUrl: "https://github.com/Sufalthakre18/My-portfolio",
     tags: ["HTML5", "JavaScript", "Tailwind CSS"],

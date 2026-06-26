@@ -24,7 +24,7 @@ export function HeroSection() {
           <div
             className="relative mb-8 flex h-[130px] w-full items-center justify-center md:h-[170px] lg:h-[250px]"
             style={{
-              backgroundImage: "url('/images/hero3.png')",
+              backgroundImage: "url('/images/hero3.webp')",
               backgroundSize: "contain",
               backgroundPosition: "center",
               backgroundAttachment: "fixed", 
